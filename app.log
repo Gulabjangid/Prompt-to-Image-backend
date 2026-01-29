@@ -1,0 +1,863 @@
+2026-01-26 14:07:03,042 - main - INFO - Environment variables loaded successfully
+2026-01-26 14:07:03,042 - main - INFO - Loaded 3 A4F API key(s)
+2026-01-26 14:07:03,042 - main - INFO - A4F Base URL configured: https://api.a4f.com/v1
+2026-01-26 14:07:04,260 - main - INFO - Initialized 3 A4F client(s)
+2026-01-26 14:07:04,260 - main - INFO - Google Gemini model initialized successfully
+2026-01-26 14:07:04,260 - main - INFO - FastAPI app initialized
+2026-01-26 14:07:04,260 - main - INFO - CORS middleware configured
+2026-01-26 14:07:04,308 - main - INFO - ============================================================
+2026-01-26 14:07:04,308 - main - INFO - FastAPI Application Started
+2026-01-26 14:07:04,308 - main - INFO - A4F Base URL: https://api.a4f.com/v1
+2026-01-26 14:07:04,328 - main - INFO - API Keys Configured: 3
+2026-01-26 14:07:04,330 - main - INFO - ============================================================
+2026-01-26 14:07:21,158 - main - INFO - ============================================================
+2026-01-26 14:07:21,159 - main - INFO - FastAPI Application Shutting Down
+2026-01-26 14:07:21,159 - main - INFO - ============================================================
+2026-01-26 14:07:26,971 - main - INFO - Environment variables loaded successfully
+2026-01-26 14:07:26,972 - main - INFO - Loaded 3 A4F API key(s)
+2026-01-26 14:07:26,973 - main - INFO - A4F Base URL configured: https://api.a4f.com/v1
+2026-01-26 14:07:28,548 - main - INFO - Initialized 3 A4F client(s)
+2026-01-26 14:07:28,549 - main - INFO - Google Gemini model initialized successfully
+2026-01-26 14:07:28,550 - main - INFO - FastAPI app initialized
+2026-01-26 14:07:28,550 - main - INFO - CORS middleware configured
+2026-01-26 14:07:28,630 - main - INFO - ============================================================
+2026-01-26 14:07:28,630 - main - INFO - FastAPI Application Started
+2026-01-26 14:07:28,631 - main - INFO - A4F Base URL: https://api.a4f.com/v1
+2026-01-26 14:07:28,631 - main - INFO - API Keys Configured: 3
+2026-01-26 14:07:28,631 - main - INFO - ============================================================
+2026-01-26 14:07:28,654 - main - INFO - Enhance prompt request: style='none', prompt='a boy...'
+2026-01-26 14:07:28,655 - main - INFO - Enhancing prompt for style 'none': a boy...
+2026-01-26 14:07:32,954 - main - INFO - Prompt enhanced successfully: A young boy with curious eyes stands in a sun-dapp...
+2026-01-26 14:07:32,955 - main - INFO - Prompt enhanced successfully via endpoint
+2026-01-26 14:07:38,450 - main - INFO - Image generation request: prompt='A young boy with curious eyes stands in a sun-dapp...', style='none', ratio='16:9'
+2026-01-26 14:07:38,451 - main - INFO - Using prompt: A young boy with curious eyes stands in a sun-dappled meadow, captured in a medi...
+2026-01-26 14:07:38,451 - main - INFO - Calling A4F API with model='provider-8/z-image', size='1280x720'
+2026-01-26 14:07:39,615 - openai._base_client - INFO - Retrying request to /images/generations in 0.465356 seconds
+2026-01-26 14:07:40,166 - openai._base_client - INFO - Retrying request to /images/generations in 0.773778 seconds
+2026-01-26 14:07:41,049 - main - ERROR - A4F API request failed: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpcore\_sync\connection.py", line 156, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 286, in generate_image
+    response = client.images.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\openai\resources\images.py", line 888, in generate
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\venv311\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-01-26 14:07:41,349 - main - ERROR - Unexpected API error: Connection error.
+2026-01-26 15:29:34,579 - main - INFO - Environment variables loaded successfully
+2026-01-26 15:29:34,579 - main - INFO - Loaded 1 A4F API key(s)
+2026-01-26 15:29:34,579 - main - INFO - A4F Base URL configured: https://api.a4f.com/v1
+2026-01-26 15:29:34,907 - main - INFO - Initialized 1 A4F client(s)
+2026-01-26 15:29:34,907 - main - INFO - Google Gemini model initialized successfully
+2026-01-26 15:29:34,907 - main - INFO - FastAPI app initialized
+2026-01-26 15:29:34,907 - main - INFO - CORS middleware configured
+2026-01-26 15:29:34,917 - main - INFO - ============================================================
+2026-01-26 15:29:34,917 - main - INFO - FastAPI Application Started
+2026-01-26 15:29:34,922 - main - INFO - A4F Base URL: https://api.a4f.com/v1
+2026-01-26 15:29:34,922 - main - INFO - API Keys Configured: 1
+2026-01-26 15:29:34,922 - main - INFO - ============================================================
+2026-01-26 15:29:56,427 - main - INFO - Enhance prompt request: style='none', prompt='a hot girl in car...'
+2026-01-26 15:29:56,428 - main - INFO - Enhancing prompt for style 'none': a hot girl in car...
+2026-01-26 15:29:59,927 - main - INFO - Prompt enhanced successfully: A glamorous woman with flowing hair sits confident...
+2026-01-26 15:29:59,927 - main - INFO - Prompt enhanced successfully via endpoint
+2026-01-26 15:30:07,567 - main - INFO - Image generation request: prompt='A glamorous woman with flowing hair sits confident...', style='none', ratio='16:9'
+2026-01-26 15:30:07,569 - main - INFO - Using prompt: A glamorous woman with flowing hair sits confidently in a sleek, luxurious car d...
+2026-01-26 15:30:07,570 - main - INFO - Calling A4F API with model='provider-8/z-image', size='1280x720'
+2026-01-26 15:30:08,571 - openai._base_client - INFO - Retrying request to /images/generations in 0.457329 seconds
+2026-01-26 15:30:09,367 - openai._base_client - INFO - Retrying request to /images/generations in 0.869726 seconds
+2026-01-26 15:30:10,333 - main - ERROR - A4F API request failed: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 156, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 286, in generate_image
+    response = client.images.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\resources\images.py", line 883, in generate
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-01-26 15:30:10,751 - main - ERROR - Unexpected API error: Connection error.
+2026-01-26 15:30:17,884 - main - INFO - Image generation request: prompt='A glamorous woman with flowing hair sits confident...', style='cinematic', ratio='16:9'
+2026-01-26 15:30:17,886 - main - INFO - Using prompt: A glamorous woman with flowing hair sits confidently in a sleek, luxurious car d...
+2026-01-26 15:30:17,886 - main - INFO - Calling A4F API with model='provider-4/imagen-4', size='1280x720'
+2026-01-26 15:30:18,209 - openai._base_client - INFO - Retrying request to /images/generations in 0.497805 seconds
+2026-01-26 15:30:18,840 - openai._base_client - INFO - Retrying request to /images/generations in 0.981712 seconds
+2026-01-26 15:30:19,923 - main - ERROR - A4F API request failed: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 156, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 286, in generate_image
+    response = client.images.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\resources\images.py", line 883, in generate
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-01-26 15:30:19,927 - main - ERROR - Unexpected API error: Connection error.
+2026-01-26 15:37:10,753 - main - INFO - ============================================================
+2026-01-26 15:37:10,753 - main - INFO - FastAPI Application Shutting Down
+2026-01-26 15:37:10,753 - main - INFO - ============================================================
+2026-01-26 15:37:20,346 - main - INFO - Environment variables loaded successfully
+2026-01-26 15:37:20,348 - main - INFO - Loaded 1 A4F API key(s)
+2026-01-26 15:37:20,348 - main - INFO - A4F Base URL configured: https://api.a4f.com/v1
+2026-01-26 15:37:20,668 - main - INFO - Initialized 1 A4F client(s)
+2026-01-26 15:37:20,669 - main - INFO - Google Gemini model initialized successfully
+2026-01-26 15:37:20,670 - main - INFO - FastAPI app initialized
+2026-01-26 15:37:20,670 - main - INFO - CORS middleware configured
+2026-01-26 15:37:20,675 - main - INFO - ============================================================
+2026-01-26 15:37:20,676 - main - INFO - FastAPI Application Started
+2026-01-26 15:37:20,676 - main - INFO - A4F Base URL: https://api.a4f.com/v1
+2026-01-26 15:37:20,676 - main - INFO - API Keys Configured: 1
+2026-01-26 15:37:20,676 - main - INFO - ============================================================
+2026-01-26 15:37:41,118 - main - INFO - Enhance prompt request: style='none', prompt='a man and a girl...'
+2026-01-26 15:37:41,118 - main - INFO - Enhancing prompt for style 'none': a man and a girl...
+2026-01-26 15:37:44,834 - main - INFO - Prompt enhanced successfully: A kind man and a curious young girl share a heartw...
+2026-01-26 15:37:44,834 - main - INFO - Prompt enhanced successfully via endpoint
+2026-01-26 15:37:47,221 - main - INFO - Image generation request: prompt='A kind man and a curious young girl share a heartw...', style='none', ratio='16:9'
+2026-01-26 15:37:47,222 - main - INFO - Using prompt: A kind man and a curious young girl share a heartwarming moment in a sun-dappled...
+2026-01-26 15:37:47,222 - main - INFO - Calling A4F API with model='provider-8/z-image', size='1280x720'
+2026-01-26 15:37:47,976 - openai._base_client - INFO - Retrying request to /images/generations in 0.383696 seconds
+2026-01-26 15:37:48,482 - openai._base_client - INFO - Retrying request to /images/generations in 0.905286 seconds
+2026-01-26 15:37:49,482 - main - ERROR - A4F API request failed: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 156, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 286, in generate_image
+    response = client.images.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\resources\images.py", line 883, in generate
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-01-26 15:37:49,494 - main - ERROR - Unexpected API error: Connection error.
+2026-01-26 15:38:49,372 - main - INFO - Image generation request: prompt='a hot girl...', style='none', ratio='16:4'
+2026-01-26 15:38:49,372 - main - INFO - Using prompt: a hot girl...
+2026-01-26 15:38:49,372 - main - INFO - Calling A4F API with model='provider-4/imagen-3.5', size='1024x1024'
+2026-01-26 15:38:49,509 - openai._base_client - INFO - Retrying request to /images/generations in 0.481744 seconds
+2026-01-26 15:38:50,091 - openai._base_client - INFO - Retrying request to /images/generations in 0.866977 seconds
+2026-01-26 15:38:51,087 - main - ERROR - A4F API request failed: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 156, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 286, in generate_image
+    response = client.images.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\resources\images.py", line 883, in generate
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-01-26 15:38:51,091 - main - ERROR - Unexpected API error: Connection error.
+2026-01-26 15:50:46,330 - main - INFO - Image generation request: prompt='a cat...', style='cinematic', ratio='1:1'
+2026-01-26 15:50:46,330 - main - INFO - Enhancing prompt for style 'cinematic': a cat...
+2026-01-26 15:50:50,523 - main - INFO - Prompt enhanced successfully: A majestic tabby cat with glowing eyes, perched al...
+2026-01-26 15:50:50,523 - main - INFO - Using prompt: A majestic tabby cat with glowing eyes, perched alertly in a rain-slicked urban ...
+2026-01-26 15:50:50,524 - main - INFO - Calling A4F API with model='provider-4/imagen-3.5', size='1024x1024'
+2026-01-26 15:50:50,652 - openai._base_client - INFO - Retrying request to /images/generations in 0.377613 seconds
+2026-01-26 15:50:51,122 - openai._base_client - INFO - Retrying request to /images/generations in 0.970269 seconds
+2026-01-26 15:50:52,194 - main - ERROR - A4F API request failed: Connection error.
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_sync\connection.py", line 156, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 982, in request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_transports\default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 286, in generate_image
+    response = client.images.generate(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\resources\images.py", line 883, in generate
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\AppData\Local\Programs\Python\Python312\Lib\site-packages\openai\_base_client.py", line 1014, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-01-26 15:50:52,198 - main - ERROR - Unexpected API error: Connection error.
+2026-01-26 15:57:00,528 - main - INFO - ============================================================
+2026-01-26 15:57:00,529 - main - INFO - FastAPI Application Shutting Down
+2026-01-26 15:57:00,529 - main - INFO - ============================================================
+2026-01-26 15:57:08,389 - main - INFO - Environment variables loaded successfully
+2026-01-26 15:57:08,390 - main - INFO - Loaded 1 A4F API key(s)
+2026-01-26 15:57:08,390 - main - INFO - A4F Base URL configured: https://api.a4f.com/v1
+2026-01-26 15:57:08,731 - main - INFO - Initialized 1 A4F client(s)
+2026-01-26 15:57:08,731 - main - INFO - Google Gemini model initialized successfully
+2026-01-26 15:57:08,731 - main - INFO - FastAPI app initialized
+2026-01-26 15:57:08,731 - main - INFO - CORS middleware configured
+2026-01-26 15:57:08,741 - main - INFO - ============================================================
+2026-01-26 15:57:08,741 - main - INFO - FastAPI Application Started
+2026-01-26 15:57:08,742 - main - INFO - A4F Base URL: https://api.a4f.com/v1
+2026-01-26 15:57:08,742 - main - INFO - API Keys Configured: 1
+2026-01-26 15:57:08,742 - main - INFO - ============================================================
+2026-01-26 15:57:09,729 - main - INFO - Image generation request: prompt='a cat...', style='cinematic', ratio='1:1'
+2026-01-26 15:57:09,730 - main - INFO - Enhancing prompt for style 'cinematic': a cat...
+2026-01-26 15:57:13,563 - main - INFO - Prompt enhanced successfully: A majestic ginger cat with emerald eyes, bathed in...
+2026-01-26 15:57:13,564 - main - INFO - Using prompt: A majestic ginger cat with emerald eyes, bathed in dramatic chiaroscuro light, g...
+2026-01-26 15:57:13,564 - main - CRITICAL - Unexpected error in generate_image: name 'STYLE_MODEL_MAP' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 284, in generate_image
+    model_id = pick_model_for_style(data.style_preset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 173, in pick_model_for_style
+    candidates = STYLE_MODEL_MAP.get(style) or STYLE_MODEL_MAP["none"]
+                 ^^^^^^^^^^^^^^^
+NameError: name 'STYLE_MODEL_MAP' is not defined
+2026-01-26 20:37:28,873 - main - INFO - ============================================================
+2026-01-26 20:37:28,873 - main - INFO - FastAPI Application Shutting Down
+2026-01-26 20:37:28,873 - main - INFO - ============================================================
+2026-01-26 21:11:14,077 - main - INFO - ======================================================================
+2026-01-26 21:11:14,331 - main - INFO -    Model: provider-4/imagen-3.5
+2026-01-26 21:11:14,332 - main - INFO -    Keys: 1
+2026-01-26 21:11:14,332 - main - INFO -    Base: https://api.a4f.com/v1
+2026-01-26 21:11:14,332 - main - INFO - ======================================================================
+2026-01-26 21:13:17,872 - openai._base_client - INFO - Retrying request to /images/generations in 0.485889 seconds
+2026-01-26 21:13:18,496 - openai._base_client - INFO - Retrying request to /images/generations in 0.776276 seconds
+2026-01-26 21:13:19,485 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 22 | Size: 1024x1024
+2026-01-26 21:14:27,756 - openai._base_client - INFO - Retrying request to /images/generations in 0.447629 seconds
+2026-01-26 21:14:28,328 - openai._base_client - INFO - Retrying request to /images/generations in 0.881378 seconds
+2026-01-26 21:14:29,374 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 22 | Size: 1024x1024
+2026-01-29 13:09:46,128 - main - INFO - ======================================================================
+2026-01-29 13:09:46,392 - main - INFO -    Model: provider-4/imagen-3.5
+2026-01-29 13:09:46,392 - main - INFO -    Keys: 1
+2026-01-29 13:09:46,392 - main - INFO -    Base: https://api.a4f.com/v1
+2026-01-29 13:09:46,393 - main - INFO - ======================================================================
+2026-01-29 13:10:05,226 - openai._base_client - INFO - Retrying request to /images/generations in 0.414981 seconds
+2026-01-29 13:10:05,783 - openai._base_client - INFO - Retrying request to /images/generations in 0.931996 seconds
+2026-01-29 13:10:07,145 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 313 | Size: 1280x720
+2026-01-29 13:12:29,211 - main - INFO - ======================================================================
+2026-01-29 13:12:29,221 - main - INFO - ======================================================================
+2026-01-29 13:12:37,540 - main - INFO - ======================================================================
+2026-01-29 13:12:37,553 - main - INFO -    Model: provider-4/imagen-3.5
+2026-01-29 13:12:37,553 - main - INFO -    Keys: 1
+2026-01-29 13:12:37,553 - main - INFO -    Base: https://www.a4f.co/api-keys
+2026-01-29 13:12:37,555 - main - INFO - ======================================================================
+2026-01-29 13:12:38,745 - httpx - INFO - HTTP Request: POST https://www.a4f.co/api-keys/images/generations "HTTP/1.1 405 Method Not Allowed"
+2026-01-29 13:12:38,768 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 335 | Size: 1280x720
+2026-01-29 13:13:37,263 - httpx - INFO - HTTP Request: POST https://www.a4f.co/api-keys/images/generations "HTTP/1.1 405 Method Not Allowed"
+2026-01-29 13:13:37,278 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 319 | Size: 1280x720
+2026-01-29 13:13:42,092 - httpx - INFO - HTTP Request: POST https://www.a4f.co/api-keys/images/generations "HTTP/1.1 405 Method Not Allowed"
+2026-01-29 13:13:42,104 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:15:00,943 - httpx - INFO - HTTP Request: POST https://www.a4f.co/api-keys/images/generations "HTTP/1.1 405 Method Not Allowed"
+2026-01-29 13:15:00,955 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:15:01,081 - main - INFO - ======================================================================
+2026-01-29 13:15:01,089 - main - INFO - ======================================================================
+2026-01-29 13:15:08,138 - main - INFO - ======================================================================
+2026-01-29 13:15:08,153 - main - INFO -    Model: provider-4/imagen-4
+2026-01-29 13:15:08,153 - main - INFO -    Keys: 1
+2026-01-29 13:15:08,153 - main - INFO -    Base: https://www.a4f.co/api-keys
+2026-01-29 13:15:08,153 - main - INFO - ======================================================================
+2026-01-29 13:15:16,263 - httpx - INFO - HTTP Request: POST https://www.a4f.co/api-keys/images/generations "HTTP/1.1 405 Method Not Allowed"
+2026-01-29 13:15:16,278 - main - ERROR -    Model: provider-4/imagen-4 | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:15:51,217 - main - INFO - ======================================================================
+2026-01-29 13:15:51,223 - main - INFO - ======================================================================
+2026-01-29 13:16:03,193 - main - INFO - ======================================================================
+2026-01-29 13:16:03,202 - main - INFO -    Model: provider-4/imagen-4
+2026-01-29 13:16:03,203 - main - INFO -    Keys: 1
+2026-01-29 13:16:03,203 - main - INFO -    Base: https://www.a4f.co/api-keys
+2026-01-29 13:16:03,203 - main - INFO - ======================================================================
+2026-01-29 13:16:10,142 - httpx - INFO - HTTP Request: POST https://www.a4f.co/api-keys/images/generations "HTTP/1.1 405 Method Not Allowed"
+2026-01-29 13:16:10,154 - main - ERROR -    Model: provider-4/imagen-4 | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:20:02,574 - main - INFO - ======================================================================
+2026-01-29 13:20:02,611 - main - INFO - ======================================================================
+2026-01-29 13:20:06,800 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:20:06,800 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:20:06,800 - main - INFO -  Using fixed model: provider-4/imagen-4
+2026-01-29 13:20:06,800 - main - INFO -  A4F Base URL: https://www.a4f.co/api-keys
+2026-01-29 13:20:07,119 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:20:07,120 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:20:07,121 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:20:07,127 - main - INFO - ======================================================================
+2026-01-29 13:20:07,127 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:20:07,127 - main - INFO -    Model: provider-4/imagen-4
+2026-01-29 13:20:07,127 - main - INFO -    Keys: 1
+2026-01-29 13:20:07,128 - main - INFO -    Base: https://www.a4f.co/api-keys
+2026-01-29 13:20:07,128 - main - INFO - ======================================================================
+2026-01-29 13:20:11,715 - main - INFO - ======================================================================
+2026-01-29 13:20:11,717 - main - INFO -  Application SHUTTING DOWN
+2026-01-29 13:20:11,717 - main - INFO - ======================================================================
+2026-01-29 13:20:22,523 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:20:22,524 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:20:22,524 - main - INFO -  Using fixed model: provider-4/imagen-4
+2026-01-29 13:20:22,524 - main - INFO -  A4F Base URL: https://www.a4f.co/api-keys
+2026-01-29 13:20:22,860 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:20:22,860 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:20:22,860 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:20:22,866 - main - INFO - ======================================================================
+2026-01-29 13:20:22,867 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:20:22,867 - main - INFO -    Model: provider-4/imagen-4
+2026-01-29 13:20:22,868 - main - INFO -    Keys: 1
+2026-01-29 13:20:22,868 - main - INFO -    Base: https://www.a4f.co/api-keys
+2026-01-29 13:20:22,869 - main - INFO - ======================================================================
+2026-01-29 13:25:17,771 - main - INFO - ======================================================================
+2026-01-29 13:25:17,771 - main - INFO -  Application SHUTTING DOWN
+2026-01-29 13:25:17,771 - main - INFO - ======================================================================
+2026-01-29 13:25:23,235 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:25:23,235 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:25:23,235 - main - INFO -  Using fixed model: provider-4/imagen-4
+2026-01-29 13:25:23,235 - main - INFO -  A4F Base URL: https://www.a4f.co/v1
+2026-01-29 13:25:23,576 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:25:23,578 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:25:23,579 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:25:23,579 - main - INFO - ======================================================================
+2026-01-29 13:25:23,579 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:25:23,579 - main - INFO -    Model: provider-4/imagen-4
+2026-01-29 13:25:23,579 - main - INFO -    Keys: 1
+2026-01-29 13:25:23,579 - main - INFO -    Base: https://www.a4f.co/v1
+2026-01-29 13:25:23,579 - main - INFO - ======================================================================
+2026-01-29 13:25:38,050 - main - INFO -   Generation: 'A strikingly confident woman in her earl...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-01-29 13:25:38,051 - main - INFO -  Calling A4F: model=provider-4/imagen-4, size=1280x720, client=179058146936
+2026-01-29 13:25:45,045 - openai._base_client - INFO - Retrying request to /images/generations in 0.390849 seconds
+2026-01-29 13:25:46,292 - httpx - INFO - HTTP Request: POST https://www.a4f.co/v1/images/generations "HTTP/1.1 405 Method Not Allowed"
+2026-01-29 13:25:46,294 - main - ERROR -  A4F API ERROR: Error code: 405
+2026-01-29 13:25:46,295 - main - ERROR -    Model: provider-4/imagen-4 | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:25:46,295 - main - ERROR -     Unexpected API status: 405
+2026-01-29 13:28:51,308 - main - INFO -   Generation: 'A strikingly confident woman in her earl...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-01-29 13:28:51,310 - main - INFO -  Calling A4F: model=provider-4/imagen-4, size=1280x720, client=179058146936
+2026-01-29 13:28:53,098 - httpx - INFO - HTTP Request: POST https://www.a4f.co/v1/images/generations "HTTP/1.1 405 Method Not Allowed"
+2026-01-29 13:28:53,101 - main - ERROR -  A4F API ERROR: Error code: 405
+2026-01-29 13:28:53,101 - main - ERROR -    Model: provider-4/imagen-4 | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:28:53,101 - main - ERROR -     Unexpected API status: 405
+2026-01-29 13:28:53,211 - main - INFO - ======================================================================
+2026-01-29 13:28:53,211 - main - INFO -  Application SHUTTING DOWN
+2026-01-29 13:28:53,211 - main - INFO - ======================================================================
+2026-01-29 13:28:58,194 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:28:58,194 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:28:58,195 - main - INFO -  Using fixed model: provider-4/imagen-4
+2026-01-29 13:28:58,195 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-01-29 13:28:58,511 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:28:58,511 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:28:58,512 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:28:58,519 - main - INFO - ======================================================================
+2026-01-29 13:28:58,520 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:28:58,520 - main - INFO -    Model: provider-4/imagen-4
+2026-01-29 13:28:58,520 - main - INFO -    Keys: 1
+2026-01-29 13:28:58,520 - main - INFO -    Base: https://api.a4f.co/v1
+2026-01-29 13:28:58,520 - main - INFO - ======================================================================
+2026-01-29 13:29:00,557 - main - INFO -   Generation: 'A strikingly confident woman in her earl...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-01-29 13:29:00,558 - main - INFO -  Calling A4F: model=provider-4/imagen-4, size=1280x720, client=123891143369
+2026-01-29 13:29:03,615 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-01-29 13:29:03,616 - openai._base_client - INFO - Retrying request to /images/generations in 0.447412 seconds
+2026-01-29 13:29:05,106 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-01-29 13:29:05,106 - openai._base_client - INFO - Retrying request to /images/generations in 0.932140 seconds
+2026-01-29 13:29:06,759 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-01-29 13:29:06,759 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-01-29 13:29:06,759 - main - ERROR -    Model: provider-4/imagen-4 | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:29:06,759 - main - ERROR -     Unexpected API status: 500
+2026-01-29 13:34:40,480 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:34:40,481 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:34:40,481 - main - INFO -  Using fixed model: provider-4/imagen-4
+2026-01-29 13:34:40,481 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-01-29 13:34:40,923 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:34:40,923 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:34:40,928 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:34:41,006 - main - INFO - ======================================================================
+2026-01-29 13:34:41,006 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:34:41,006 - main - INFO -    Model: provider-4/imagen-4
+2026-01-29 13:34:41,007 - main - INFO -    Keys: 1
+2026-01-29 13:34:41,007 - main - INFO -    Base: https://api.a4f.co/v1
+2026-01-29 13:34:41,007 - main - INFO - ======================================================================
+2026-01-29 13:35:07,589 - main - INFO -   Generation: 'A strikingly confident woman in her earl...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-01-29 13:35:07,589 - main - INFO -  Calling A4F: model=provider-4/imagen-4, size=1280x720, client=180112538185
+2026-01-29 13:35:10,518 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-01-29 13:35:10,519 - openai._base_client - INFO - Retrying request to /images/generations in 0.394280 seconds
+2026-01-29 13:35:11,854 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-01-29 13:35:11,854 - openai._base_client - INFO - Retrying request to /images/generations in 0.788949 seconds
+2026-01-29 13:35:13,807 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-01-29 13:35:13,809 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-01-29 13:35:13,810 - main - ERROR -    Model: provider-4/imagen-4 | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:35:13,810 - main - ERROR -     Unexpected API status: 500
+2026-01-29 13:39:18,194 - main - INFO - ======================================================================
+2026-01-29 13:39:18,195 - main - INFO -  Application SHUTTING DOWN
+2026-01-29 13:39:18,195 - main - INFO - ======================================================================
+2026-01-29 13:39:23,257 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:39:23,257 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:39:23,257 - main - INFO -  Using fixed model: provider-8/
+2026-01-29 13:39:23,258 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-01-29 13:39:23,662 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:39:23,663 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:39:23,663 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:39:23,719 - main - INFO - ======================================================================
+2026-01-29 13:39:23,720 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:39:23,720 - main - INFO -    Model: provider-8/
+2026-01-29 13:39:23,720 - main - INFO -    Keys: 1
+2026-01-29 13:39:23,721 - main - INFO -    Base: https://api.a4f.co/v1
+2026-01-29 13:39:23,721 - main - INFO - ======================================================================
+2026-01-29 13:39:25,033 - main - INFO - ======================================================================
+2026-01-29 13:39:25,033 - main - INFO -  Application SHUTTING DOWN
+2026-01-29 13:39:25,034 - main - INFO - ======================================================================
+2026-01-29 13:39:30,319 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:39:30,320 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:39:30,320 - main - INFO -  Using fixed model: provider-8/-image
+2026-01-29 13:39:30,321 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-01-29 13:39:30,856 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:39:30,857 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:39:30,858 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:39:30,933 - main - INFO - ======================================================================
+2026-01-29 13:39:30,934 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:39:30,934 - main - INFO -    Model: provider-8/-image
+2026-01-29 13:39:30,935 - main - INFO -    Keys: 1
+2026-01-29 13:39:30,935 - main - INFO -    Base: https://api.a4f.co/v1
+2026-01-29 13:39:30,936 - main - INFO - ======================================================================
+2026-01-29 13:39:30,961 - main - INFO -   Generation: 'A strikingly confident woman in her earl...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-01-29 13:39:30,962 - main - INFO -  Calling A4F: model=provider-8/-image, size=1280x720, client=146008185417
+2026-01-29 13:39:32,990 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 400 Bad Request"
+2026-01-29 13:39:32,992 - main - ERROR -  A4F API ERROR: Error code: 400 - {'error': {'message': "Model 'provider-8/-image' is not an image generation model and cannot be used with this endpoint.", 'type': 'invalid_request_error', 'code': 'invalid_parameter', 'param': 'model'}}
+2026-01-29 13:39:32,992 - main - ERROR -    Model: provider-8/-image | Prompt len: 356 | Size: 1280x720
+2026-01-29 13:39:32,993 - main - ERROR -     Likely: Invalid model/prompt/size or unsupported params
+2026-01-29 13:40:03,555 - main - INFO - ======================================================================
+2026-01-29 13:40:03,555 - main - INFO -  Application SHUTTING DOWN
+2026-01-29 13:40:03,557 - main - INFO - ======================================================================
+2026-01-29 13:40:08,831 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:40:08,831 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:40:08,831 - main - INFO -  Using fixed model: provider-8/z-image
+2026-01-29 13:40:08,831 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-01-29 13:40:09,213 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:40:09,213 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:40:09,213 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:40:09,265 - main - INFO - ======================================================================
+2026-01-29 13:40:09,265 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:40:09,265 - main - INFO -    Model: provider-8/z-image
+2026-01-29 13:40:09,265 - main - INFO -    Keys: 1
+2026-01-29 13:40:09,270 - main - INFO -    Base: https://api.a4f.co/v1
+2026-01-29 13:40:09,270 - main - INFO - ======================================================================
+2026-01-29 13:40:10,979 - main - INFO - ======================================================================
+2026-01-29 13:40:10,980 - main - INFO -  Application SHUTTING DOWN
+2026-01-29 13:40:10,980 - main - INFO - ======================================================================
+2026-01-29 13:40:16,366 - main - INFO -  Environment variables loaded successfully
+2026-01-29 13:40:16,367 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 13:40:16,368 - main - INFO -  Using fixed model: provider-8/z-image
+2026-01-29 13:40:16,369 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-01-29 13:40:17,008 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 13:40:17,009 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 13:40:17,010 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 13:40:17,093 - main - INFO - ======================================================================
+2026-01-29 13:40:17,094 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 13:40:17,094 - main - INFO -    Model: provider-8/z-image
+2026-01-29 13:40:17,095 - main - INFO -    Keys: 1
+2026-01-29 13:40:17,095 - main - INFO -    Base: https://api.a4f.co/v1
+2026-01-29 13:40:17,095 - main - INFO - ======================================================================
+2026-01-29 13:40:17,105 - main - INFO -   Generation: 'A strikingly confident woman in her earl...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-01-29 13:40:17,106 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1280x720, client=134360599109
+2026-01-29 13:40:50,066 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 200 OK"
+2026-01-29 13:40:51,096 - main - INFO -  SUCCESS: Image generated - https://api.a4f.co/v1/images/serve/ab684391f3b9492589a2665a3...
+2026-01-29 13:41:45,283 - main - INFO -  Enhancing: 'a sexy girl...' (style: none)
+2026-01-29 13:41:50,204 - main - INFO - Enhanced: 'A stunningly beautiful woman, exuding co...'
+2026-01-29 13:41:50,205 - main - INFO -  Standalone enhancement complete
+2026-01-29 13:42:00,493 - main - INFO -   Generation: 'A stunningly beautiful woman, exuding co...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-01-29 13:42:00,494 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1280x720, client=134360599109
+2026-01-29 13:42:10,481 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 200 OK"
+2026-01-29 13:42:10,483 - main - CRITICAL -  UNEXPECTED ERROR in generate_image: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 224, in generate_image
+    image_url = response.data[0].url
+                ~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-01-29 13:43:57,928 - main - INFO -  Enhancing: 'a preety indian girlin the pond...' (style: cinematic)
+2026-01-29 13:44:03,543 - main - INFO - Enhanced: 'A graceful Indian girl stands serenely a...'
+2026-01-29 13:44:03,543 - main - INFO -  Standalone enhancement complete
+2026-01-29 13:44:19,215 - main - INFO -   Generation: 'A graceful Indian girl stands serenely a...' | Style: photorealistic | Ratio: 16:9 | Enhance: False
+2026-01-29 13:44:19,215 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1280x720, client=134360599109
+2026-01-29 13:44:21,854 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 200 OK"
+2026-01-29 13:44:21,856 - main - CRITICAL -  UNEXPECTED ERROR in generate_image: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Gulab Jangid\Desktop\ThirdYear\OS\p2I\backend\main.py", line 224, in generate_image
+    image_url = response.data[0].url
+                ~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2026-01-29 13:44:48,290 - main - INFO -   Generation: 'A graceful Indian girl stands serenely a...' | Style: photorealistic | Ratio: 16:9 | Enhance: False
+2026-01-29 13:44:48,290 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1280x720, client=134360599109
+2026-01-29 13:45:27,601 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 200 OK"
+2026-01-29 13:45:29,349 - main - INFO -  SUCCESS: Image generated - https://api.a4f.co/v1/images/serve/0927353dc2b946fb9c29a8b6b...
+2026-01-29 19:44:13,480 - main - INFO -  Environment variables loaded successfully
+2026-01-29 19:44:13,480 - main - INFO -  Loaded 1 A4F API key(s)
+2026-01-29 19:44:13,480 - main - INFO -  Using fixed model: provider-8/z-image
+2026-01-29 19:44:13,483 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-01-29 19:44:13,990 - main - INFO -  Initialized 1 A4F client(s)
+2026-01-29 19:44:13,990 - main - INFO - Google Gemini prompt enhancer initialized
+2026-01-29 19:44:13,990 - main - INFO -  FastAPI app + CORS configured
+2026-01-29 19:44:14,002 - main - INFO - ======================================================================
+2026-01-29 19:44:14,002 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-01-29 19:44:14,003 - main - INFO -    Model: provider-8/z-image
+2026-01-29 19:44:14,003 - main - INFO -    Keys: 1
+2026-01-29 19:44:14,003 - main - INFO -    Base: https://api.a4f.co/v1
+2026-01-29 19:44:14,004 - main - INFO - ======================================================================
+2026-01-29 22:06:45,423 - main - INFO -  Enhancing: 'a preety girl in her 30s hot...' (style: none)
+2026-01-29 22:06:51,475 - main - INFO - Enhanced: 'A captivating woman in her early thirtie...'
+2026-01-29 22:06:51,476 - main - INFO -  Standalone enhancement complete
+2026-01-29 22:10:57,569 - main - INFO -   Generation: 'A captivating woman in her early thirtie...' | Style: none | Ratio: 1:1 | Enhance: False
+2026-01-29 22:10:57,571 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1024x1024, client=184279680701
+2026-01-29 22:11:27,439 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 200 OK"
+2026-01-29 22:11:27,490 - main - INFO -  SUCCESS: Image generated - https://api.a4f.co/v1/images/serve/651f61f1556d4e869fe6e7397...
+2026-01-29 22:22:57,737 - main - INFO - ======================================================================
+2026-01-29 22:22:57,738 - main - INFO -  Application SHUTTING DOWN
+2026-01-29 22:22:57,738 - main - INFO - ======================================================================
