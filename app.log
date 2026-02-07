@@ -861,3 +861,51 @@ IndexError: list index out of range
 2026-01-29 22:22:57,737 - main - INFO - ======================================================================
 2026-01-29 22:22:57,738 - main - INFO -  Application SHUTTING DOWN
 2026-01-29 22:22:57,738 - main - INFO - ======================================================================
+2026-02-07 11:52:03,006 - main - INFO -  Environment variables loaded successfully
+2026-02-07 11:52:03,007 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-07 11:52:03,007 - main - INFO -  Using fixed model: provider-8/z-image
+2026-02-07 11:52:03,008 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-07 11:52:03,361 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-07 11:52:03,361 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-07 11:52:03,362 - main - INFO -  FastAPI app + CORS configured
+2026-02-07 11:52:03,366 - main - INFO - ======================================================================
+2026-02-07 11:52:03,368 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-07 11:52:03,368 - main - INFO -    Model: provider-8/z-image
+2026-02-07 11:52:03,368 - main - INFO -    Keys: 1
+2026-02-07 11:52:03,368 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-07 11:52:03,368 - main - INFO - ======================================================================
+2026-02-07 11:52:24,529 - main - INFO -  Enhancing: 'a girl sexy in 30s...' (style: none)
+2026-02-07 11:52:29,664 - main - INFO - Enhanced: 'A stunning woman in her early 30s, exudi...'
+2026-02-07 11:52:29,666 - main - INFO -  Standalone enhancement complete
+2026-02-07 12:13:10,196 - main - INFO - ======================================================================
+2026-02-07 12:13:10,196 - main - INFO -  Application SHUTTING DOWN
+2026-02-07 12:13:10,197 - main - INFO - ======================================================================
+2026-02-07 12:42:48,756 - main - INFO -  Environment variables loaded successfully
+2026-02-07 12:42:48,758 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-07 12:42:48,759 - main - INFO -  Using fixed model: provider-8/z-image
+2026-02-07 12:42:48,759 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-07 12:42:49,124 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-07 12:42:49,125 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-07 12:42:49,126 - main - INFO -  FastAPI app + CORS configured
+2026-02-07 12:42:49,132 - main - INFO - ======================================================================
+2026-02-07 12:42:49,134 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-07 12:42:49,135 - main - INFO -    Model: provider-8/z-image
+2026-02-07 12:42:49,135 - main - INFO -    Keys: 1
+2026-02-07 12:42:49,135 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-07 12:42:49,135 - main - INFO - ======================================================================
+2026-02-07 12:42:50,060 - main - WARNING - Blocked request: invalid internal token
+2026-02-07 12:47:55,867 - main - WARNING - Blocked request: invalid internal token
+2026-02-07 12:48:46,459 - main - INFO -  Enhancing: 'a girl...' (style: none)
+2026-02-07 12:48:50,920 - main - INFO - Enhanced: 'A young girl stands contemplatively in a...'
+2026-02-07 12:48:50,920 - main - INFO -  Standalone enhancement complete
+2026-02-07 12:49:54,536 - main - INFO -  Enhancing: 'a boy...' (style: none)
+2026-02-07 12:49:57,753 - main - INFO - Enhanced: 'A curious young boy with tousled brown h...'
+2026-02-07 12:49:57,754 - main - INFO -  Standalone enhancement complete
+2026-02-07 12:50:13,957 - main - WARNING - Blocked request: invalid internal token
+2026-02-07 12:51:47,895 - main - INFO -   Generation: 'A curious young boy with tousled brown h...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-07 12:51:47,896 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1280x720, client=157477969312
+2026-02-07 12:52:18,295 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 200 OK"
+2026-02-07 12:52:19,407 - main - INFO -  SUCCESS: Image generated - https://api.a4f.co/v1/images/serve/9dce0563b30d4b58914125d09...
+2026-02-07 21:51:25,667 - main - INFO - ======================================================================
+2026-02-07 21:51:25,674 - main - INFO -  Application SHUTTING DOWN
+2026-02-07 21:51:25,674 - main - INFO - ======================================================================

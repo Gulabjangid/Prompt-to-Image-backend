@@ -1,5 +1,11 @@
-fastapi
-uvicorn
-python-dotenv
-openai
-pydantic
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+pydantic==2.6.4
+python-dotenv==1.0.1
+
+openai==1.14.3
+google-generativeai==0.4.1
+
+httpx==0.27.0
+typing-extensions==4.10.0

@@ -2,7 +2,7 @@ import os
 import random
 import logging
 from typing import Literal, Optional, List
-
+from fastapi import Header, Depends
 import google.generativeai as genai
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -32,6 +32,20 @@ try:
 except Exception as e:
     logger.error(f" Failed to load .env file: {e}")
     raise
+
+INTERNAL_API_TOKEN = os.getenv("INTERNAL_API_TOKEN")
+
+if not INTERNAL_API_TOKEN:
+    logger.critical("INTERNAL_API_TOKEN missing from .env")
+    raise RuntimeError("INTERNAL_API_TOKEN not set")
+
+def verify_internal_token(x_internal_token: str = Header(None)):
+    if x_internal_token != INTERNAL_API_TOKEN:
+        logger.warning("Blocked request: invalid internal token")
+        raise HTTPException(
+            status_code=401,
+            detail="Unauthorized request"
+        )
 
 # =========================================================
 # A4F Configuration - Single model only: provider-4/imagen-3.5
@@ -88,10 +102,10 @@ except Exception as e:
 app = FastAPI(title="Unified AI Image Generator - Imagen 3.5")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Tighten in production
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["http://localhost:3000"],
+allow_methods=["POST"],
+allow_headers=["Content-Type", "X-Internal-Token"],
+
 )
 logger.info(" FastAPI app + CORS configured")
 
@@ -194,8 +208,13 @@ def aspect_ratio_to_size(ratio: str) -> str:
 # =========================================================
 # Main Image Generation Endpoint
 # =========================================================
-@app.post("/generate-image", response_model=GenerateResponse)
+@app.post(
+    "/generate-image",
+    response_model=GenerateResponse,
+    dependencies=[Depends(verify_internal_token)]
+)
 async def generate_image(request: GenerateRequest):
+
     """
     Workflow:
     1. Enhance prompt with Gemini (if requested) using base professional + style prompt
@@ -260,8 +279,13 @@ async def generate_image(request: GenerateRequest):
 # =========================================================
 # Prompt Enhancement Endpoint (Standalone)
 # =========================================================
-@app.post("/enhance-prompt", response_model=EnhanceResponse)
+@app.post(
+    "/enhance-prompt",
+    response_model=EnhanceResponse,
+    dependencies=[Depends(verify_internal_token)]
+)
 async def enhance_prompt_endpoint(request: EnhanceRequest):
+
     """Standalone prompt enhancement using professional base + style."""
     try:
         enhanced = enhance_prompt(request.prompt, request.style_preset)
@@ -276,14 +300,8 @@ async def enhance_prompt_endpoint(request: EnhanceRequest):
 # =========================================================
 @app.get("/health")
 async def health_check():
-    """Health check with configuration diagnostics."""
-    return {
-        "status": "healthy",
-        "model": SINGLE_MODEL_ID,
-        "api_keys_count": len(A4F_API_KEYS),
-        "base_url": A4F_BASE_URL,
-        "gemini_ready": True
-    }
+    return {"status": "ok"}
+
 
 # =========================================================
 # Application Lifecycle Events
