@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv, find_dotenv
 from openai import OpenAI, OpenAIError
+from bytez import Bytez
 
 # =========================================================
 # Logging Configuration - Comprehensive error tracking
@@ -48,38 +49,56 @@ def verify_internal_token(x_internal_token: str = Header(None)):
         )
 
 # =========================================================
-# A4F Configuration - Single model only: provider-4/imagen-3.5
+# Bytez Configuration - Google Imagen 4.0 Ultra
 # =========================================================
-SINGLE_MODEL_ID = "provider-8/z-image"  # Fixed model as requested
-A4F_BASE_URL = os.getenv("A4F_BASE_URL", "https://api.a4f.co/v1").rstrip("/")
+BYTEZ_API_KEY = os.getenv("BYTEZ_API_KEY")
+MODEL_ID = "google/imagen-4.0-ultra-generate-001"
 
 try:
-    raw_keys = os.getenv("A4F_API_KEYS") or os.getenv("api_key") or ""
-    A4F_API_KEYS: List[str] = [k.strip() for k in raw_keys.split(",") if k.strip()]
-
-    if not A4F_API_KEYS:
-        raise RuntimeError("No A4F API keys found. Set A4F_API_KEYS or api_key in .env")
+    if not BYTEZ_API_KEY:
+        raise RuntimeError("BYTEZ_API_KEY missing from .env")
     
-    logger.info(f" Loaded {len(A4F_API_KEYS)} A4F API key(s)")
-    logger.info(f" Using fixed model: {SINGLE_MODEL_ID}")
-    logger.info(f" A4F Base URL: {A4F_BASE_URL}")
+    bytez_sdk = Bytez(BYTEZ_API_KEY)
+    logger.info(f" Bytez SDK initialized")
+    logger.info(f" Using model: {MODEL_ID}")
 except Exception as e:
-    logger.critical(f" API configuration failed: {e}")
+    logger.critical(f" Bytez SDK initialization failed: {e}")
     raise
 
-# Initialize single OpenAI client per API key for load balancing
-try:
-    a4f_clients: List[OpenAI] = [
-        OpenAI(base_url=A4F_BASE_URL, api_key=key) for key in A4F_API_KEYS
-    ]
-    logger.info(f" Initialized {len(a4f_clients)} A4F client(s)")
-except Exception as e:
-    logger.critical(f" Failed to initialize A4F clients: {e}")
-    raise
-
-def pick_a4f_client() -> OpenAI:
-    """Randomly select A4F client for load distribution across API keys."""
-    return random.choice(a4f_clients)
+# =========================================================
+# COMMENTED OUT: A4F Configuration - Single model only: provider-4/imagen-3.5
+# =========================================================
+# SINGLE_MODEL_ID = "provider-4/imagen-3.5"
+#  # Fixed model as requested
+# A4F_BASE_URL = os.getenv("A4F_BASE_URL", "https://api.a4f.co/v1").rstrip("/")
+#
+# try:
+#     raw_keys = os.getenv("A4F_API_KEYS") or os.getenv("api_key") or ""
+#     A4F_API_KEYS: List[str] = [k.strip() for k in raw_keys.split(",") if k.strip()]
+#
+#     if not A4F_API_KEYS:
+#         raise RuntimeError("No A4F API keys found. Set A4F_API_KEYS or api_key in .env")
+#     
+#     logger.info(f" Loaded {len(A4F_API_KEYS)} A4F API key(s)")
+#     logger.info(f" Using fixed model: {SINGLE_MODEL_ID}")
+#     logger.info(f" A4F Base URL: {A4F_BASE_URL}")
+# except Exception as e:
+#     logger.critical(f" API configuration failed: {e}")
+#     raise
+#
+# # Initialize single OpenAI client per API key for load balancing
+# try:
+#     a4f_clients: List[OpenAI] = [
+#         OpenAI(base_url=A4F_BASE_URL, api_key=key) for key in A4F_API_KEYS
+#     ]
+#     logger.info(f" Initialized {len(a4f_clients)} A4F client(s)")
+# except Exception as e:
+#     logger.critical(f" Failed to initialize A4F clients: {e}")
+#     raise
+#
+# def pick_a4f_client() -> OpenAI:
+#     """Randomly select A4F client for load distribution across API keys."""
+#     return random.choice(a4f_clients)
 
 # =========================================================
 # Google Gemini Prompt Enhancer Initialization
@@ -102,7 +121,7 @@ except Exception as e:
 app = FastAPI(title="Unified AI Image Generator - Imagen 3.5")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],
 allow_methods=["POST"],
 allow_headers=["Content-Type", "X-Internal-Token"],
 
@@ -123,8 +142,8 @@ class GenerateRequest(BaseModel):
 class GenerateResponse(BaseModel):
     image_url: str
     used_prompt: str
-    used_provider: str = "provider-4"
-    used_model: str = SINGLE_MODEL_ID
+    used_provider: str = "Bytez"
+    used_model: str = MODEL_ID
 
 class EnhanceRequest(BaseModel):
     prompt: str
@@ -211,14 +230,14 @@ def aspect_ratio_to_size(ratio: str) -> str:
 @app.post(
     "/generate-image",
     response_model=GenerateResponse,
-    dependencies=[Depends(verify_internal_token)]
+    # dependencies=[Depends(verify_internal_token)]
 )
 async def generate_image(request: GenerateRequest):
 
     """
     Workflow:
     1. Enhance prompt with Gemini (if requested) using base professional + style prompt
-    2. Call A4F provider-4/imagen-3.5 with random API key
+    2. Call Bytez google/imagen-4.0-ultra-generate-001 model
     3. Detailed error logging for API/Model/Rate-limit failures
     """
     logger.info(f"  Generation: '{request.prompt[:40]}...' | Style: {request.style_preset} | Ratio: {request.aspect_ratio} | Enhance: {request.enhance}")
@@ -226,52 +245,30 @@ async def generate_image(request: GenerateRequest):
     try:
         # 1. Prompt preparation (enhance or use original)
         final_prompt = enhance_prompt(request.prompt, request.style_preset) if request.enhance else request.prompt
-        size = aspect_ratio_to_size(request.aspect_ratio)
-        client = pick_a4f_client()
         
-        logger.info(f" Calling A4F: model={SINGLE_MODEL_ID}, size={size}, client={hash(client)}")
+        logger.info(f" Calling Bytez: model={MODEL_ID}")
         
-        # 2. A4F Image Generation API Call
-        response = client.images.generate(
-            model=SINGLE_MODEL_ID,
-            prompt=final_prompt,
-            n=1,
-            response_format="url",
-            size=size,
-        )
+        # 2. Bytez Image Generation API Call
+        model = bytez_sdk.model(MODEL_ID)
+        results = model.run(final_prompt)
         
-        image_url = response.data[0].url
+        if results.error:
+            logger.error(f" Bytez API ERROR: {results.error}")
+            raise HTTPException(500, f"Bytez API failed: {results.error}")
+        
+        image_url = results.output
         logger.info(f" SUCCESS: Image generated - {image_url[:60]}...")
         
         return GenerateResponse(
             image_url=image_url,
             used_prompt=final_prompt,
-            used_provider="provider-4/imagen-3.5",
-            used_model=SINGLE_MODEL_ID
+            used_provider="Bytez",
+            used_model=MODEL_ID
         )
         
-    # 3. Precise API Error Handling with Detailed Logging
-    except OpenAIError as api_error:
-        error_message = str(api_error)
-        logger.error(f" A4F API ERROR: {error_message}")
-        logger.error(f"   Model: {SINGLE_MODEL_ID} | Prompt len: {len(final_prompt)} | Size: {size}")
-        
-        if api_error.status_code == 400:
-            logger.error("    Likely: Invalid model/prompt/size or unsupported params")
-            raise HTTPException(400, f"Invalid request (Model/Prompt error): {error_message}")
-        elif api_error.status_code == 401:
-            logger.error("    API Key authentication failure")
-            raise HTTPException(401, "Invalid API key - check A4F_API_KEYS in .env")
-        elif api_error.status_code == 429:
-            logger.error("    Rate limit exceeded")
-            raise HTTPException(429, "Rate limit hit. Try again in 1-2 minutes.")
-        elif api_error.status_code == 404:
-            logger.error("    Model not found: provider-4/imagen-3.5 unavailable")
-            raise HTTPException(404, f"Model {SINGLE_MODEL_ID} not available on A4F")
-        else:
-            logger.error(f"    Unexpected API status: {api_error.status_code}")
-            raise HTTPException(500, f"A4F API failed: {error_message}")
-    
+    # 3. Error Handling with Detailed Logging
+    except HTTPException:
+        raise
     except Exception as e:
         logger.critical(f" UNEXPECTED ERROR in generate_image: {e}", exc_info=True)
         raise HTTPException(500, "Internal server error during image generation")
@@ -309,10 +306,8 @@ async def health_check():
 @app.on_event("startup")
 async def startup():
     logger.info("=" * 70)
-    logger.info(" A4F Imagen 3.5 Image Generator STARTED")
-    logger.info(f"   Model: {SINGLE_MODEL_ID}")
-    logger.info(f"   Keys: {len(A4F_API_KEYS)}")
-    logger.info(f"   Base: {A4F_BASE_URL}")
+    logger.info(" Bytez Imagen 4.0 Ultra Image Generator STARTED")
+    logger.info(f"   Model: {MODEL_ID}")
     logger.info("=" * 70)
 
 @app.on_event("shutdown")

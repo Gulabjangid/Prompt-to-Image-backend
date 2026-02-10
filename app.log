@@ -909,3 +909,460 @@ IndexError: list index out of range
 2026-02-07 21:51:25,667 - main - INFO - ======================================================================
 2026-02-07 21:51:25,674 - main - INFO -  Application SHUTTING DOWN
 2026-02-07 21:51:25,674 - main - INFO - ======================================================================
+2026-02-08 15:37:11,323 - main - INFO -  Environment variables loaded successfully
+2026-02-08 15:37:11,325 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 15:37:11,326 - main - INFO -  Using fixed model: provider-8/z-image
+2026-02-08 15:37:11,326 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 15:37:11,664 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 15:37:11,664 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 15:37:11,664 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 15:37:11,673 - main - INFO - ======================================================================
+2026-02-08 15:37:11,674 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 15:37:11,674 - main - INFO -    Model: provider-8/z-image
+2026-02-08 15:37:11,675 - main - INFO -    Keys: 1
+2026-02-08 15:37:11,675 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 15:37:11,675 - main - INFO - ======================================================================
+2026-02-08 15:37:21,778 - main - INFO -  Enhancing: 'hi...' (style: none)
+2026-02-08 15:37:22,381 - main - ERROR -  Gemini enhancement failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-02-08 15:37:22,382 - main - INFO -  Standalone enhancement complete
+2026-02-08 15:38:17,327 - main - INFO -  Environment variables loaded successfully
+2026-02-08 15:38:17,327 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 15:38:17,327 - main - INFO -  Using fixed model: provider-8/z-image
+2026-02-08 15:38:17,327 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 15:38:17,753 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 15:38:17,753 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 15:38:17,754 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 15:38:17,760 - main - INFO - ======================================================================
+2026-02-08 15:38:17,761 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 15:38:17,761 - main - INFO -    Model: provider-8/z-image
+2026-02-08 15:38:17,762 - main - INFO -    Keys: 1
+2026-02-08 15:38:17,762 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 15:38:17,763 - main - INFO - ======================================================================
+2026-02-08 15:38:21,869 - main - INFO -  Enhancing: 'hi...' (style: none)
+2026-02-08 15:38:22,369 - main - ERROR -  Gemini enhancement failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-02-08 15:38:22,370 - main - INFO -  Standalone enhancement complete
+2026-02-08 15:38:45,453 - main - INFO -   Generation: 'a boy...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 15:38:45,454 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1280x720, client=129736589629
+2026-02-08 15:38:52,965 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 400 Bad Request"
+2026-02-08 15:38:52,971 - main - ERROR -  A4F API ERROR: Error code: 400 - {'error': {'message': "Unknown provider prefix 'provider-8' for model 'provider-8/z-image'.", 'type': 'invalid_request_error', 'code': 'unknown_provider', 'param': 'model'}}
+2026-02-08 15:38:52,971 - main - ERROR -    Model: provider-8/z-image | Prompt len: 5 | Size: 1280x720
+2026-02-08 15:38:52,971 - main - ERROR -     Likely: Invalid model/prompt/size or unsupported params
+2026-02-08 18:57:31,042 - main - INFO -  Environment variables loaded successfully
+2026-02-08 18:57:31,043 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 18:57:31,043 - main - INFO -  Using fixed model: provider-8/z-image
+2026-02-08 18:57:31,043 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 18:57:31,467 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 18:57:31,467 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 18:57:31,467 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 18:57:31,477 - main - INFO - ======================================================================
+2026-02-08 18:57:31,477 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 18:57:31,477 - main - INFO -    Model: provider-8/z-image
+2026-02-08 18:57:31,477 - main - INFO -    Keys: 1
+2026-02-08 18:57:31,477 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 18:57:31,477 - main - INFO - ======================================================================
+2026-02-08 19:07:03,216 - main - INFO - ======================================================================
+2026-02-08 19:07:03,217 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 19:07:03,217 - main - INFO - ======================================================================
+2026-02-08 19:07:12,235 - main - INFO -  Environment variables loaded successfully
+2026-02-08 19:07:12,236 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 19:07:12,236 - main - INFO -  Using fixed model: provider-8/z-image
+2026-02-08 19:07:12,237 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 19:07:12,569 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 19:07:12,570 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 19:07:12,571 - main - INFO -  FastAPI app + CORS configured for origins: ['http://localhost:3000', 'http://127.0.0.1:3000']
+2026-02-08 19:07:12,576 - main - INFO - ======================================================================
+2026-02-08 19:07:12,576 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 19:07:12,578 - main - INFO -    Model: provider-8/z-image
+2026-02-08 19:07:12,578 - main - INFO -    Keys: 1
+2026-02-08 19:07:12,578 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 19:07:12,578 - main - INFO - ======================================================================
+2026-02-08 19:07:30,923 - main - INFO -  Enhancing: 'boy...' (style: none)
+2026-02-08 19:07:31,345 - main - ERROR -  Gemini enhancement failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-02-08 19:07:31,346 - main - INFO -  Standalone enhancement complete
+2026-02-08 19:08:31,159 - main - INFO - ======================================================================
+2026-02-08 19:08:31,160 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 19:08:31,160 - main - INFO - ======================================================================
+2026-02-08 19:08:38,714 - main - INFO -  Environment variables loaded successfully
+2026-02-08 19:08:38,714 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 19:08:38,715 - main - INFO -  Using fixed model: provider-8/z-image
+2026-02-08 19:08:38,715 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 19:08:39,075 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 19:08:39,075 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 19:08:39,077 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 19:08:39,084 - main - INFO - ======================================================================
+2026-02-08 19:08:39,084 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 19:08:39,084 - main - INFO -    Model: provider-8/z-image
+2026-02-08 19:08:39,085 - main - INFO -    Keys: 1
+2026-02-08 19:08:39,086 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 19:08:39,086 - main - INFO - ======================================================================
+2026-02-08 19:22:31,570 - main - INFO -  Enhancing: 'boy...' (style: none)
+2026-02-08 19:22:32,005 - main - ERROR -  Gemini enhancement failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-02-08 19:22:32,006 - main - INFO -  Standalone enhancement complete
+2026-02-08 19:22:50,089 - main - INFO -  Enhancing: 'a girl...' (style: none)
+2026-02-08 19:22:50,230 - main - ERROR -  Gemini enhancement failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-02-08 19:22:50,231 - main - INFO -  Standalone enhancement complete
+2026-02-08 19:26:23,604 - main - INFO -  Enhancing: 'a girl ...' (style: none)
+2026-02-08 19:26:23,774 - main - ERROR -  Gemini enhancement failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-02-08 19:26:23,774 - main - INFO -  Standalone enhancement complete
+2026-02-08 19:27:48,705 - main - INFO -  Enhancing: 'a girl ...' (style: none)
+2026-02-08 19:27:48,882 - main - ERROR -  Gemini enhancement failed: 400 API key expired. Please renew the API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key expired. Please renew the API key."
+]
+2026-02-08 19:27:48,883 - main - INFO -  Standalone enhancement complete
+2026-02-08 19:31:51,453 - main - INFO -  Enhancing: 'a girl ...' (style: none)
+2026-02-08 19:31:51,602 - main - ERROR -  Gemini enhancement failed: 400 API key expired. Please renew the API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key expired. Please renew the API key."
+]
+2026-02-08 19:31:51,602 - main - INFO -  Standalone enhancement complete
+2026-02-08 19:32:36,816 - main - INFO - ======================================================================
+2026-02-08 19:32:36,817 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 19:32:36,817 - main - INFO - ======================================================================
+2026-02-08 19:32:53,625 - main - INFO -  Environment variables loaded successfully
+2026-02-08 19:32:53,626 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 19:32:53,626 - main - INFO -  Using fixed model: provider-8/z-image
+2026-02-08 19:32:53,627 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 19:32:53,964 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 19:32:53,965 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 19:32:53,965 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 19:32:53,970 - main - INFO - ======================================================================
+2026-02-08 19:32:53,971 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 19:32:53,971 - main - INFO -    Model: provider-8/z-image
+2026-02-08 19:32:53,971 - main - INFO -    Keys: 1
+2026-02-08 19:32:53,971 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 19:32:53,972 - main - INFO - ======================================================================
+2026-02-08 19:32:59,067 - main - INFO -  Enhancing: 'a girl...' (style: none)
+2026-02-08 19:33:02,497 - main - INFO - Enhanced: 'A serene young girl stands in a sun-dren...'
+2026-02-08 19:33:02,498 - main - INFO -  Standalone enhancement complete
+2026-02-08 19:33:08,687 - main - INFO -   Generation: 'A serene young girl stands in a sun-dren...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 19:33:08,688 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1280x720, client=101463052323
+2026-02-08 19:33:12,314 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 400 Bad Request"
+2026-02-08 19:33:12,314 - main - ERROR -  A4F API ERROR: Error code: 400 - {'error': {'message': "Unknown provider prefix 'provider-8' for model 'provider-8/z-image'.", 'type': 'invalid_request_error', 'code': 'unknown_provider', 'param': 'model'}}
+2026-02-08 19:33:12,319 - main - ERROR -    Model: provider-8/z-image | Prompt len: 332 | Size: 1280x720
+2026-02-08 19:33:12,319 - main - ERROR -     Likely: Invalid model/prompt/size or unsupported params
+2026-02-08 19:34:52,998 - main - INFO -   Generation: 'A serene young girl stands in a sun-dren...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 19:34:52,999 - main - INFO -  Calling A4F: model=provider-8/z-image, size=1280x720, client=101463052323
+2026-02-08 19:34:54,245 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 400 Bad Request"
+2026-02-08 19:34:54,247 - main - ERROR -  A4F API ERROR: Error code: 400 - {'error': {'message': "Unknown provider prefix 'provider-8' for model 'provider-8/z-image'.", 'type': 'invalid_request_error', 'code': 'unknown_provider', 'param': 'model'}}
+2026-02-08 19:34:54,248 - main - ERROR -    Model: provider-8/z-image | Prompt len: 332 | Size: 1280x720
+2026-02-08 19:34:54,248 - main - ERROR -     Likely: Invalid model/prompt/size or unsupported params
+2026-02-08 19:34:54,348 - main - INFO - ======================================================================
+2026-02-08 19:34:54,348 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 19:34:54,349 - main - INFO - ======================================================================
+2026-02-08 19:35:02,454 - main - INFO -  Environment variables loaded successfully
+2026-02-08 19:35:02,461 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 19:35:02,461 - main - INFO -  Using fixed model: provider-4/imagen-3.5
+2026-02-08 19:35:02,461 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 19:35:02,819 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 19:35:02,820 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 19:35:02,821 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 19:35:02,826 - main - INFO - ======================================================================
+2026-02-08 19:35:02,829 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 19:35:02,829 - main - INFO -    Model: provider-4/imagen-3.5
+2026-02-08 19:35:02,829 - main - INFO -    Keys: 1
+2026-02-08 19:35:02,829 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 19:35:02,829 - main - INFO - ======================================================================
+2026-02-08 19:35:02,843 - main - INFO -   Generation: 'A serene young girl stands in a sun-dren...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 19:35:02,843 - main - INFO -  Calling A4F: model=provider-4/imagen-3.5, size=1280x720, client=114977693785
+2026-02-08 19:35:07,828 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 19:35:07,829 - openai._base_client - INFO - Retrying request to /images/generations in 0.460776 seconds
+2026-02-08 19:35:08,871 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 19:35:08,875 - openai._base_client - INFO - Retrying request to /images/generations in 0.857236 seconds
+2026-02-08 19:35:10,208 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 19:35:10,212 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 19:35:10,213 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 332 | Size: 1280x720
+2026-02-08 19:35:10,213 - main - ERROR -     Unexpected API status: 500
+2026-02-08 20:34:07,346 - main - INFO - ======================================================================
+2026-02-08 20:34:07,346 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 20:34:07,347 - main - INFO - ======================================================================
+2026-02-08 20:34:16,097 - main - INFO -  Environment variables loaded successfully
+2026-02-08 20:34:16,097 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 20:34:16,098 - main - INFO -  Using fixed model: provider-4/imagen-3.5
+2026-02-08 20:34:16,098 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 20:34:16,457 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 20:34:16,457 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 20:34:16,458 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 20:34:16,463 - main - INFO - ======================================================================
+2026-02-08 20:34:16,463 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 20:34:16,464 - main - INFO -    Model: provider-4/imagen-3.5
+2026-02-08 20:34:16,464 - main - INFO -    Keys: 1
+2026-02-08 20:34:16,465 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 20:34:16,465 - main - INFO - ======================================================================
+2026-02-08 20:34:39,260 - main - INFO -   Generation: 'A serene young girl stands in a sun-dren...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 20:34:39,260 - main - INFO -  Calling A4F: model=provider-4/imagen-3.5, size=1280x720, client=136259924003
+2026-02-08 20:34:41,931 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:34:41,932 - openai._base_client - INFO - Retrying request to /images/generations in 0.388190 seconds
+2026-02-08 20:34:42,833 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:34:42,835 - openai._base_client - INFO - Retrying request to /images/generations in 0.887760 seconds
+2026-02-08 20:34:44,258 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:34:44,259 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 20:34:44,260 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 332 | Size: 1280x720
+2026-02-08 20:34:44,260 - main - ERROR -     Unexpected API status: 500
+2026-02-08 20:36:54,303 - main - INFO - ======================================================================
+2026-02-08 20:36:54,303 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 20:36:54,303 - main - INFO - ======================================================================
+2026-02-08 20:37:00,563 - main - INFO -  Environment variables loaded successfully
+2026-02-08 20:37:00,563 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 20:37:00,563 - main - INFO -  Using fixed model: provider-4/imagen-3.5
+2026-02-08 20:37:00,565 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 20:37:00,926 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 20:37:00,927 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 20:37:00,927 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 20:37:00,934 - main - INFO - ======================================================================
+2026-02-08 20:37:00,934 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 20:37:00,935 - main - INFO -    Model: provider-4/imagen-3.5
+2026-02-08 20:37:00,935 - main - INFO -    Keys: 1
+2026-02-08 20:37:00,935 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 20:37:00,936 - main - INFO - ======================================================================
+2026-02-08 20:37:00,948 - main - INFO -   Generation: 'A serene young girl stands in a sun-dren...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 20:37:00,948 - main - INFO -  Calling A4F: model=provider-4/imagen-3.5, size=1280x720, client=154088695266
+2026-02-08 20:37:03,631 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:37:03,632 - openai._base_client - INFO - Retrying request to /images/generations in 0.494313 seconds
+2026-02-08 20:37:04,816 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:37:04,818 - openai._base_client - INFO - Retrying request to /images/generations in 0.914503 seconds
+2026-02-08 20:37:06,362 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:37:06,364 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 20:37:06,364 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 332 | Size: 1280x720
+2026-02-08 20:37:06,365 - main - ERROR -     Unexpected API status: 500
+2026-02-08 20:38:04,142 - main - INFO -   Generation: 'A serene young girl stands in a sun-dren...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 20:38:04,144 - main - INFO -  Calling A4F: model=provider-4/imagen-3.5, size=1280x720, client=154088695266
+2026-02-08 20:38:06,702 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:38:06,703 - openai._base_client - INFO - Retrying request to /images/generations in 0.404380 seconds
+2026-02-08 20:38:07,646 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:38:07,647 - openai._base_client - INFO - Retrying request to /images/generations in 0.797699 seconds
+2026-02-08 20:38:09,854 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:38:09,854 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 20:38:09,854 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 332 | Size: 1280x720
+2026-02-08 20:38:09,854 - main - ERROR -     Unexpected API status: 500
+2026-02-08 20:38:09,960 - main - INFO - ======================================================================
+2026-02-08 20:38:09,960 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 20:38:09,960 - main - INFO - ======================================================================
+2026-02-08 20:38:15,224 - main - INFO -  Environment variables loaded successfully
+2026-02-08 20:38:15,225 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 20:38:15,225 - main - INFO -  Using fixed model: provider-4/z-image-turbo
+2026-02-08 20:38:15,225 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 20:38:15,544 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 20:38:15,544 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 20:38:15,544 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 20:38:15,551 - main - INFO - ======================================================================
+2026-02-08 20:38:15,551 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 20:38:15,552 - main - INFO -    Model: provider-4/z-image-turbo
+2026-02-08 20:38:15,552 - main - INFO -    Keys: 1
+2026-02-08 20:38:15,552 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 20:38:15,553 - main - INFO - ======================================================================
+2026-02-08 20:39:46,524 - main - INFO -   Generation: 'A serene young girl stands in a sun-dren...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 20:39:46,524 - main - INFO -  Calling A4F: model=provider-4/z-image-turbo, size=1280x720, client=137654924193
+2026-02-08 20:39:53,978 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:39:53,980 - openai._base_client - INFO - Retrying request to /images/generations in 0.436552 seconds
+2026-02-08 20:39:54,954 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:39:54,955 - openai._base_client - INFO - Retrying request to /images/generations in 0.767625 seconds
+2026-02-08 20:39:56,270 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 20:39:56,272 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 20:39:56,272 - main - ERROR -    Model: provider-4/z-image-turbo | Prompt len: 332 | Size: 1280x720
+2026-02-08 20:39:56,273 - main - ERROR -     Unexpected API status: 500
+2026-02-08 20:39:56,377 - main - INFO - ======================================================================
+2026-02-08 20:39:56,377 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 20:39:56,378 - main - INFO - ======================================================================
+2026-02-08 20:40:01,665 - main - INFO -  Environment variables loaded successfully
+2026-02-08 20:40:01,672 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 20:40:01,672 - main - INFO -  Using fixed model: provider-4/z-image-turbo
+2026-02-08 20:40:01,672 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 20:40:02,002 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 20:40:02,002 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 20:40:02,008 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 20:40:02,013 - main - INFO - ======================================================================
+2026-02-08 20:40:02,013 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 20:40:02,013 - main - INFO -    Model: provider-4/z-image-turbo
+2026-02-08 20:40:02,013 - main - INFO -    Keys: 1
+2026-02-08 20:40:02,013 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 20:40:02,017 - main - INFO - ======================================================================
+2026-02-08 20:42:17,504 - main - INFO - ======================================================================
+2026-02-08 20:42:17,505 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 20:42:17,505 - main - INFO - ======================================================================
+2026-02-08 20:42:22,982 - main - INFO -  Environment variables loaded successfully
+2026-02-08 20:42:22,985 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 20:42:22,985 - main - INFO -  Using fixed model: provider-4/z-image-turbo
+2026-02-08 20:42:22,985 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 20:42:23,308 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 20:42:23,308 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 20:42:23,310 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 20:42:23,315 - main - INFO - ======================================================================
+2026-02-08 20:42:23,316 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 20:42:23,316 - main - INFO -    Model: provider-4/z-image-turbo
+2026-02-08 20:42:23,316 - main - INFO -    Keys: 1
+2026-02-08 20:42:23,316 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 20:42:23,316 - main - INFO - ======================================================================
+2026-02-08 21:41:38,575 - main - INFO -  Enhancing: 'a girl in 30s...' (style: none)
+2026-02-08 21:41:41,741 - main - INFO - Enhanced: 'A serene woman in her 30s, captured in a...'
+2026-02-08 21:41:41,742 - main - INFO -  Standalone enhancement complete
+2026-02-08 21:41:41,849 - main - INFO - ======================================================================
+2026-02-08 21:41:41,849 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 21:41:41,849 - main - INFO - ======================================================================
+2026-02-08 21:41:48,579 - main - INFO -  Environment variables loaded successfully
+2026-02-08 21:41:48,579 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 21:41:48,579 - main - INFO -  Using fixed model: provider-4/z-image-turbo
+2026-02-08 21:41:48,579 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 21:41:48,895 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 21:41:48,896 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 21:41:48,897 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 21:41:48,900 - main - INFO - ======================================================================
+2026-02-08 21:41:48,900 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 21:41:48,900 - main - INFO -    Model: provider-4/z-image-turbo
+2026-02-08 21:41:48,900 - main - INFO -    Keys: 1
+2026-02-08 21:41:48,900 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 21:41:48,900 - main - INFO - ======================================================================
+2026-02-08 21:41:48,918 - main - INFO -   Generation: 'A serene woman in her 30s, captured in a...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 21:41:48,918 - main - INFO -  Calling A4F: model=provider-4/z-image-turbo, size=1280x720, client=134288455447
+2026-02-08 21:41:51,099 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:41:51,100 - openai._base_client - INFO - Retrying request to /images/generations in 0.496076 seconds
+2026-02-08 21:41:52,137 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:41:52,138 - openai._base_client - INFO - Retrying request to /images/generations in 0.791118 seconds
+2026-02-08 21:41:53,543 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:41:53,545 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 21:41:53,545 - main - ERROR -    Model: provider-4/z-image-turbo | Prompt len: 305 | Size: 1280x720
+2026-02-08 21:41:53,546 - main - ERROR -     Unexpected API status: 500
+2026-02-08 21:47:32,270 - main - INFO -   Generation: 'A serene woman in her 30s, captured in a...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 21:47:32,272 - main - INFO -  Calling A4F: model=provider-4/z-image-turbo, size=1280x720, client=134288455447
+2026-02-08 21:47:36,321 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:47:36,323 - openai._base_client - INFO - Retrying request to /images/generations in 0.425772 seconds
+2026-02-08 21:47:37,413 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:47:37,413 - openai._base_client - INFO - Retrying request to /images/generations in 0.956714 seconds
+2026-02-08 21:47:38,867 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:47:38,868 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 21:47:38,868 - main - ERROR -    Model: provider-4/z-image-turbo | Prompt len: 305 | Size: 1280x720
+2026-02-08 21:47:38,868 - main - ERROR -     Unexpected API status: 500
+2026-02-08 21:47:38,973 - main - INFO - ======================================================================
+2026-02-08 21:47:38,973 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 21:47:38,974 - main - INFO - ======================================================================
+2026-02-08 21:47:43,607 - main - INFO -  Environment variables loaded successfully
+2026-02-08 21:47:43,608 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 21:47:43,608 - main - INFO -  Using fixed model: provider-4/imagen-3.5
+2026-02-08 21:47:43,609 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 21:47:43,903 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 21:47:43,903 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 21:47:43,905 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 21:47:43,914 - main - INFO - ======================================================================
+2026-02-08 21:47:43,914 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 21:47:43,915 - main - INFO -    Model: provider-4/imagen-3.5
+2026-02-08 21:47:43,915 - main - INFO -    Keys: 1
+2026-02-08 21:47:43,915 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 21:47:43,916 - main - INFO - ======================================================================
+2026-02-08 21:47:43,917 - main - INFO - ======================================================================
+2026-02-08 21:47:43,917 - main - INFO -  Application SHUTTING DOWN
+2026-02-08 21:47:43,918 - main - INFO - ======================================================================
+2026-02-08 21:48:03,617 - main - INFO -  Environment variables loaded successfully
+2026-02-08 21:48:03,618 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 21:48:03,618 - main - INFO -  Using fixed model: provider-4/imagen-3.5
+2026-02-08 21:48:03,618 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 21:48:03,894 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 21:48:03,895 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 21:48:03,895 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 21:48:03,900 - main - INFO - ======================================================================
+2026-02-08 21:48:03,901 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 21:48:03,901 - main - INFO -    Model: provider-4/imagen-3.5
+2026-02-08 21:48:03,901 - main - INFO -    Keys: 1
+2026-02-08 21:48:03,902 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 21:48:03,902 - main - INFO - ======================================================================
+2026-02-08 21:48:16,817 - main - INFO -  Enhancing: 'a hot girl in lingere...' (style: none)
+2026-02-08 21:48:22,404 - main - INFO - Enhanced: 'A stunning woman gracefully posed in exq...'
+2026-02-08 21:48:22,405 - main - INFO -  Standalone enhancement complete
+2026-02-08 21:48:29,817 - main - INFO -   Generation: 'A stunning woman gracefully posed in exq...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 21:48:29,818 - main - INFO -  Calling A4F: model=provider-4/imagen-3.5, size=1280x720, client=141684236323
+2026-02-08 21:48:35,326 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:48:35,326 - openai._base_client - INFO - Retrying request to /images/generations in 0.381239 seconds
+2026-02-08 21:48:36,854 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:48:36,855 - openai._base_client - INFO - Retrying request to /images/generations in 0.946106 seconds
+2026-02-08 21:48:38,949 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 21:48:38,950 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 21:48:38,951 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 266 | Size: 1280x720
+2026-02-08 21:48:38,951 - main - ERROR -     Unexpected API status: 500
+2026-02-08 22:26:15,659 - main - INFO -  Environment variables loaded successfully
+2026-02-08 22:26:15,659 - main - INFO -  Loaded 1 A4F API key(s)
+2026-02-08 22:26:15,659 - main - INFO -  Using fixed model: provider-4/imagen-3.5
+2026-02-08 22:26:15,660 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 22:26:16,026 - main - INFO -  Initialized 1 A4F client(s)
+2026-02-08 22:26:16,026 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 22:26:16,027 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 22:26:16,032 - main - INFO - ======================================================================
+2026-02-08 22:26:16,033 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 22:26:16,033 - main - INFO -    Model: provider-4/imagen-3.5
+2026-02-08 22:26:16,035 - main - INFO -    Keys: 1
+2026-02-08 22:26:16,035 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 22:26:16,035 - main - INFO - ======================================================================
+2026-02-08 22:26:27,911 - main - INFO -  Enhancing: 'a boy...' (style: none)
+2026-02-08 22:26:31,404 - main - INFO - Enhanced: 'A young boy stands in a sun-drenched par...'
+2026-02-08 22:26:31,406 - main - INFO -  Standalone enhancement complete
+2026-02-08 22:26:33,697 - main - INFO -   Generation: 'A young boy stands in a sun-drenched par...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 22:26:33,699 - main - INFO -  Calling A4F: model=provider-4/imagen-3.5, size=1280x720, client=126554287232
+2026-02-08 22:26:37,889 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:26:37,890 - openai._base_client - INFO - Retrying request to /images/generations in 0.420176 seconds
+2026-02-08 22:26:39,393 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:26:39,394 - openai._base_client - INFO - Retrying request to /images/generations in 0.913101 seconds
+2026-02-08 22:26:40,858 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:26:40,860 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 22:26:40,861 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 317 | Size: 1280x720
+2026-02-08 22:26:40,861 - main - ERROR -     Unexpected API status: 500
+2026-02-08 22:40:14,133 - main - INFO -   Generation: 'A young boy stands in a sun-drenched par...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 22:40:14,133 - main - INFO -  Calling A4F: model=provider-4/imagen-3.5, size=1280x720, client=126554287232
+2026-02-08 22:40:15,173 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:40:15,174 - openai._base_client - INFO - Retrying request to /images/generations in 0.411119 seconds
+2026-02-08 22:40:16,158 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:40:16,161 - openai._base_client - INFO - Retrying request to /images/generations in 0.783227 seconds
+2026-02-08 22:40:17,445 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:40:17,447 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 22:40:17,448 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 317 | Size: 1280x720
+2026-02-08 22:40:17,448 - main - ERROR -     Unexpected API status: 500
+2026-02-08 22:49:57,418 - main - INFO -  Environment variables loaded successfully
+2026-02-08 22:49:57,418 - main - INFO -  Loaded 2 A4F API key(s)
+2026-02-08 22:49:57,422 - main - INFO -  Using fixed model: provider-4/imagen-3.5
+2026-02-08 22:49:57,422 - main - INFO -  A4F Base URL: https://api.a4f.co/v1
+2026-02-08 22:49:58,068 - main - INFO -  Initialized 2 A4F client(s)
+2026-02-08 22:49:58,068 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-08 22:49:58,068 - main - INFO -  FastAPI app + CORS configured
+2026-02-08 22:49:58,135 - main - INFO - ======================================================================
+2026-02-08 22:49:58,135 - main - INFO -  A4F Imagen 3.5 Image Generator STARTED
+2026-02-08 22:49:58,135 - main - INFO -    Model: provider-4/imagen-3.5
+2026-02-08 22:49:58,135 - main - INFO -    Keys: 2
+2026-02-08 22:49:58,135 - main - INFO -    Base: https://api.a4f.co/v1
+2026-02-08 22:49:58,135 - main - INFO - ======================================================================
+2026-02-08 22:50:44,767 - main - INFO -   Generation: 'A young boy stands in a sun-drenched par...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-08 22:50:44,767 - main - INFO -  Calling A4F: model=provider-4/imagen-3.5, size=1280x720, client=126554287232
+2026-02-08 22:50:46,018 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:50:46,019 - openai._base_client - INFO - Retrying request to /images/generations in 0.495493 seconds
+2026-02-08 22:50:47,217 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:50:47,217 - openai._base_client - INFO - Retrying request to /images/generations in 0.758804 seconds
+2026-02-08 22:50:49,527 - httpx - INFO - HTTP Request: POST https://api.a4f.co/v1/images/generations "HTTP/1.1 500 Internal Server Error"
+2026-02-08 22:50:49,528 - main - ERROR -  A4F API ERROR: Error code: 500 - {'error': {'message': "Client error '400 Bad Request' for url 'https://api.DevsDoCode API.pro/v1/images/generations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400", 'type': 'api_error', 'code': 'internal_server_error'}}
+2026-02-08 22:50:49,529 - main - ERROR -    Model: provider-4/imagen-3.5 | Prompt len: 317 | Size: 1280x720
+2026-02-08 22:50:49,529 - main - ERROR -     Unexpected API status: 500
+2026-02-10 23:39:39,359 - main - INFO -  Environment variables loaded successfully
+2026-02-10 23:39:39,360 - main - CRITICAL -  Bytez SDK initialization failed: BYTEZ_API_KEY missing from .env
+2026-02-10 23:42:55,049 - main - INFO -  Environment variables loaded successfully
+2026-02-10 23:42:55,050 - main - INFO -  Bytez SDK initialized
+2026-02-10 23:42:55,050 - main - INFO -  Using model: google/imagen-4.0-ultra-generate-001
+2026-02-10 23:42:55,051 - main - INFO - Google Gemini prompt enhancer initialized
+2026-02-10 23:42:55,051 - main - INFO -  FastAPI app + CORS configured
+2026-02-10 23:42:55,132 - main - INFO - ======================================================================
+2026-02-10 23:42:55,132 - main - INFO -  Bytez Imagen 4.0 Ultra Image Generator STARTED
+2026-02-10 23:42:55,133 - main - INFO -    Model: google/imagen-4.0-ultra-generate-001
+2026-02-10 23:42:55,133 - main - INFO - ======================================================================
+2026-02-10 23:43:06,578 - main - INFO -  Enhancing: 'a girl hot in 20s...' (style: none)
+2026-02-10 23:43:13,216 - main - INFO - Enhanced: 'A captivating young woman in her mid-20s...'
+2026-02-10 23:43:13,217 - main - INFO -  Standalone enhancement complete
+2026-02-10 23:43:31,016 - main - INFO -   Generation: 'A captivating young woman in her mid-20s...' | Style: none | Ratio: 16:9 | Enhance: False
+2026-02-10 23:43:31,016 - main - INFO -  Calling Bytez: model=google/imagen-4.0-ultra-generate-001
+2026-02-10 23:43:46,614 - main - INFO -  SUCCESS: Image generated - https://cdn.bytez.com/model/output/google/imagen-4.0-ultra-g...
+2026-02-10 23:46:50,672 - main - INFO - ======================================================================
+2026-02-10 23:46:50,672 - main - INFO -  Application SHUTTING DOWN
+2026-02-10 23:46:50,674 - main - INFO - ======================================================================
