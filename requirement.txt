@@ -22,3 +22,5 @@ bytez
 
 # ---- Logging helpers (safe) ----
 rich>=13.7.0
+
+openai>=1.0.0
